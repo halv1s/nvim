@@ -5,13 +5,10 @@
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
--- Disable
+-- Disable: keymap.set("mode", "key", "<Nop>")
 keymap.set("n", "s", "<Nop>")
 keymap.set("i", "<tab>", "<Nop>")
 
+-- Map guide: keymap.set("mode", "key", "mapped key", opts)
 -- Select all
-keymap.set("n", "<C-a>", "gg<S-v>G")
-
--- Indentation
-keymap.set("v", "<tab>", ">gv")
-keymap.set("v", "<S-Tab>", "<gv")
+keymap.set("n", "<C-a>", "gg<S-v>G", opts)
