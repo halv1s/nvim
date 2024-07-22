@@ -6,4 +6,4 @@
 vim.opt.relativenumber = false
 
 -- NEOVIDE CONFIG --
-vim.g.neovide_input_macos_alt_is_meta = true
+vim.g.neovide_input_macos_option_is_meta = true
