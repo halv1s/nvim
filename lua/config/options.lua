@@ -7,3 +7,6 @@ vim.opt.relativenumber = false
 
 -- NEOVIDE CONFIG --
 vim.g.neovide_input_macos_option_is_meta = true
+
+-- Prettier --
+vim.g.lazyvim_prettier_needs_config = false
