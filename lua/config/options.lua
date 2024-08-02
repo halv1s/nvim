@@ -6,7 +6,10 @@
 vim.opt.relativenumber = false
 
 -- NEOVIDE CONFIG --
-vim.g.neovide_input_macos_option_is_meta = true
+if vim.g.neovide then
+  vim.g.neovide_input_macos_option_is_meta = true
+  vim.g.neovide_transparency = 0.8
+end
 
 -- Prettier --
 vim.g.lazyvim_prettier_needs_config = false
