@@ -8,7 +8,7 @@ return {
       -- refer to the configuration section below
     },
     keys = {
-      -- window navigation
+      -- Window navigation
       { "<leader>h", "<C-w>h", desc = "Left window" },
       { "<leader>l", "<C-w>l", desc = "Right window" },
       { "<leader>k", "<C-w>k", desc = "Up window" },
@@ -16,6 +16,11 @@ return {
 
       -- NeoTree
       { "<leader>e", "<cmd>Neotree toggle<cr>", desc = "NeoTree" },
+
+      -- Telescope
+      { "<leader>f", group = "Telescope" },
+      { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
+      { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Search words" },
     },
   },
 }
