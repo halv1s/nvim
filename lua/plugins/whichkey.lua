@@ -8,6 +8,9 @@ return {
       -- refer to the configuration section below
     },
     keys = {
+      -- Utilities
+      { "<leader>Q", "<cmd>qa<cr>", desc = "Quit all" },
+
       -- Window navigation
       { "<leader>h", "<C-w>h", desc = "Left window" },
       { "<leader>l", "<C-w>l", desc = "Right window" },
