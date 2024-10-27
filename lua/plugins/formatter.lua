@@ -22,6 +22,53 @@ return {
             }
           end,
         },
+
+        -- Prettierd for JavaScript, JSX, TypeScript, TSX, and JSON
+        javascript = {
+          function()
+            return {
+              exe = "prettierd",
+              args = { vim.api.nvim_buf_get_name(0) },
+              stdin = true,
+            }
+          end,
+        },
+        javascriptreact = {
+          function()
+            return {
+              exe = "prettierd",
+              args = { vim.api.nvim_buf_get_name(0) },
+              stdin = true,
+            }
+          end,
+        },
+        typescript = {
+          function()
+            return {
+              exe = "prettierd",
+              args = { vim.api.nvim_buf_get_name(0) },
+              stdin = true,
+            }
+          end,
+        },
+        typescriptreact = {
+          function()
+            return {
+              exe = "prettierd",
+              args = { vim.api.nvim_buf_get_name(0) },
+              stdin = true,
+            }
+          end,
+        },
+        json = {
+          function()
+            return {
+              exe = "prettierd",
+              args = { vim.api.nvim_buf_get_name(0) },
+              stdin = true,
+            }
+          end,
+        },
       },
     })
 
