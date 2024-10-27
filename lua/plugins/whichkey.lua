@@ -37,6 +37,9 @@ return {
 
       -- Git
       { "<leader>g", "<cmd>LazyGit<cr>", desc = "LazyGit" },
+
+      -- Float Term
+      { "<leader>t", "<cmd>FloatermToggle<cr>", desc = "Floaterm" },
     },
   },
 }
