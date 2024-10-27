@@ -34,6 +34,9 @@ return {
         end,
         desc = "Close buffer and go to prev buffer",
       },
+
+      -- Git
+      { "<leader>g", "<cmd>LazyGit<cr>", desc = "LazyGit" },
     },
   },
 }
