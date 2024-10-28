@@ -1,6 +1,7 @@
 return {
   {
-    "voldikss/vim-floaterm",
+    "numToStr/Comment.nvim",
     event = "VeryLazy",
+    opts = {},
   },
 }

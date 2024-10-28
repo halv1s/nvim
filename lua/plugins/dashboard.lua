@@ -45,7 +45,7 @@ return {
               icon_hl = "Title",
               desc = "Open LazyVim                ",
               desc_hl = "String",
-              key = "v",
+              key = "l",
               key_hl = "Number",
               key_format = " %s",
               action = "Lazy",
