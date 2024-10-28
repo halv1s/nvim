@@ -10,6 +10,7 @@ return {
     keys = {
       -- Utilities
       { "<leader>Q", "<cmd>qa<cr>", desc = "Quit all" },
+      { "<S-Tab>", "<C-d>", mode = "i" },
 
       -- Window navigation
       { "<leader>h", "<C-w>h", desc = "Left window" },
