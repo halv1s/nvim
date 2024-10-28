@@ -29,13 +29,27 @@ return {
       { "<leader>,", "<cmd>BufferLineCyclePrev<cr>", desc = "Prev buffer" },
       { "<leader>.", "<cmd>BufferLineCycleNext<cr>", desc = "Next buffer" },
       {
-        "<leader>q",
+        "<leader>bq",
         function()
           local current = vim.api.nvim_get_current_buf()
           vim.cmd("BufferLineCyclePrev")
           vim.cmd("bdelete " .. current)
         end,
         desc = "Close buffer and go to prev buffer",
+      },
+      {
+        "<leader>bQ",
+        function()
+          -- Get a list of all buffers
+          local buffers = vim.api.nvim_list_bufs()
+          -- Iterate through each buffer and delete it
+          for _, buf in ipairs(buffers) do
+            if vim.api.nvim_buf_is_loaded(buf) then
+              vim.api.nvim_buf_delete(buf, { force = true })
+            end
+          end
+        end,
+        desc = "Close all buffers",
       },
 
       -- Git
