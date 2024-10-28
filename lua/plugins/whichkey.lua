@@ -24,7 +24,7 @@ return {
       -- Telescope
       { "<leader>f", desc = "Telescope", group = "Telescope" },
       { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
-      { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Search words" },
+      { "<leader>fw", "<cmd>Telescope live_grep<cr>", desc = "Search words" },
 
       -- Buffer
       { "<leader>,", "<cmd>BufferLineCyclePrev<cr>", desc = "Prev buffer" },

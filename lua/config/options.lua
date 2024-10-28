@@ -7,8 +7,9 @@ opt.termguicolors = true
 
 opt.clipboard:append("unnamedplus") -- Use system clipboard
 
-opt.expandtab = true -- Convert tabs to spaces
-opt.smarttab = true -- Makes tabbing smarter
-opt.autoindent = true -- Enable auto-indentation
-opt.smartindent = true -- Enable smart indentation
-opt.tabstop = 2 -- Number of spaces a tab counts for (default)
+-- Tab: https://gist.github.com/LunarLambda/4c444238fb364509b72cfb891979f1dd
+opt.expandtab = true
+opt.tabstop = 2
+opt.shiftwidth = 2
+opt.softtabstop = -1
+opt.smarttab = true
