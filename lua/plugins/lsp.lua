@@ -21,7 +21,7 @@ return {
         ensure_installed = {
           "ts_ls",
           "tailwindcss",
-
+          "rust_analyzer",
           "lua_ls",
         },
       })
@@ -54,6 +54,7 @@ return {
 
       lspconfig.ts_ls.setup({ on_attach = on_attach })
       lspconfig.tailwindcss.setup({ on_attach = on_attach })
+      lspconfig.rust_analyzer.setup({ on_attach = on_attach })
       lspconfig.lua_ls.setup({ on_attach = on_attach })
     end,
   },
