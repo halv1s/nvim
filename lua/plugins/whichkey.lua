@@ -2,11 +2,7 @@ return {
   {
     "folke/which-key.nvim",
     event = "VeryLazy",
-    opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    },
+    opts = {},
     keys = {
       -- Utilities
       { "<leader>Q", "<cmd>qa<cr>", desc = "Quit all" },
@@ -18,17 +14,13 @@ return {
       { "<leader>k", "<C-w>k", desc = "Up window" },
       { "<leader>j", "<C-w>j", desc = "Down window" },
 
-      -- NeoTree
-      { "<leader>e", "<cmd>Neotree toggle<cr>", desc = "NeoTree" },
-
       -- Telescope
-      { "<leader>f", desc = "Telescope", group = "Telescope" },
       { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
       { "<leader>fw", "<cmd>Telescope live_grep<cr>", desc = "Search words" },
 
       -- Buffer
-      { "<leader>,", "<cmd>BufferLineCyclePrev<cr>", desc = "Prev buffer" },
-      { "<leader>.", "<cmd>BufferLineCycleNext<cr>", desc = "Next buffer" },
+      { "<Tab>", "<cmd>BufferLineCycleNext<cr>", mode = "n", desc = "Next buffer" },
+      { "<S-Tab>", "<cmd>BufferLineCyclePrev<cr>", mode = "n", desc = "Prev buffer" },
       {
         "<leader>bq",
         function()
@@ -56,8 +48,13 @@ return {
       -- Git
       { "<leader>g", "<cmd>LazyGit<cr>", desc = "LazyGit" },
 
-      -- Float Term
-      { "<leader>t", "<cmd>FloatermToggle<cr>", desc = "Floaterm" },
+      -- NeoTree
+      { "<C-e>", "<Cmd>Neotree toggle<CR>", desc = "Toggle NeoTree" },
+
+      -- ToggleTerm
+      { "<C-j>", "<Cmd>ToggleTerm<CR>", mode = "n" },
+      { "<C-j>", "<Cmd>ToggleTerm<CR>", mode = "i" },
+      { "<C-j>", "<C-\\><C-n>:ToggleTerm<CR>", mode = "t" },
 
       -- Trouble
       {
