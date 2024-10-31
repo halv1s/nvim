@@ -17,6 +17,7 @@ return {
       -- Telescope
       { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
       { "<leader>fw", "<cmd>Telescope live_grep<cr>", desc = "Search words" },
+      { "<leader>fh", "<cmd>Telescope find_files hidden=true<cr>", desc = "Find Hidden Files" },
 
       -- Buffer
       { "<Tab>", "<cmd>BufferLineCycleNext<cr>", mode = "n", desc = "Next buffer" },
