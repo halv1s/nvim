@@ -19,10 +19,6 @@ return {
 
       require("mason-lspconfig").setup({
         ensure_installed = {
-          "html",
-          "ts_ls",
-          "tailwindcss",
-          "rust_analyzer",
           "lua_ls",
         },
       })
@@ -53,10 +49,6 @@ return {
         vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
       end
 
-      lspconfig.html.setup({ on_attach = on_attach })
-      lspconfig.ts_ls.setup({ on_attach = on_attach })
-      lspconfig.tailwindcss.setup({ on_attach = on_attach })
-      lspconfig.rust_analyzer.setup({ on_attach = on_attach })
       lspconfig.lua_ls.setup({ on_attach = on_attach })
     end,
   },
