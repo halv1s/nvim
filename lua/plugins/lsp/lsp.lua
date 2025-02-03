@@ -20,6 +20,7 @@ return {
       require("mason-lspconfig").setup({
         ensure_installed = {
           "lua_ls",
+          "gopls",
         },
       })
     end,
@@ -50,6 +51,20 @@ return {
       end
 
       lspconfig.lua_ls.setup({ on_attach = on_attach })
+
+      lspconfig.gopls.setup({
+        on_attach = on_attach,
+        settings = {
+          gopls = {
+            analyses = {
+              unusedparams = true,
+              shadow = true,
+            },
+            staticcheck = true,
+            gofumpt = true,
+          },
+        },
+      })
     end,
   },
 }
