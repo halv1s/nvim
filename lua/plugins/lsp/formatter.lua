@@ -7,6 +7,7 @@ return {
 				lua = { "stylua" },
 				go = { "gofumpt", "gofmt", stop_after_first = true },
 				javascript = { "prettierd", "prettier", stop_after_first = true },
+				typescript = { "prettierd", "prettier", stop_after_first = true },
 			},
 		})
 
